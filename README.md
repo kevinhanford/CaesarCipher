@@ -14,3 +14,52 @@ The project consists of a simple Python script that emulates the widely know Cae
 
 <h2>Usage</h2>
 
+To get the code run this from the command line:
+
+```commandline
+git clone https://github.com/kevinhanford/CaesarCipher.git
+```
+
+Once that is done, in the main directory where `caesar_cipher.py` is located run:
+
+```commandline
+python caesar_cipher.py -h
+```
+
+The following will be displayed:
+
+```commandline
+usage: caesar_cipher.py [-h] -m M -s S
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -m M        The mode (e = encrypt or d = decrypt)
+  -s S        The shift value
+```
+
+There is an Example.txt file provided that contains the message to be encrypted:
+
+Hello, World!
+
+To encrypt the message run the following:
+
+```commandline
+python .\caesar_cipher.py -m encrypt -s 1
+```
+
+The encrypted contents will be written to a Encrypted.txt file:
+
+Ifmmp, Xpsme!
+
+To decrypt the message run the following:
+
+```commandline
+python .\caesar_cipher.py -m decrypt -s 1
+```
+
+The decrypted contents will be written to a Decrypted.txt file:
+
+Hello, World!
+
+Note:
+In order to change the message to encrypt just update the Example.txt file and run through steps again.
