@@ -59,7 +59,7 @@ def main(shift, mode):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-m", help="The mode (e = encrypt or d = decrypt)", required=True)
+    parser.add_argument("-m", help="The mode (encrypt or decrypt)", required=True)
     parser.add_argument("-s", help="The shift value (1-26)", required=True)
     args = parser.parse_args()
 
