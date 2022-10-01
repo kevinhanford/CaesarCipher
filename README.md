@@ -33,7 +33,7 @@ usage: caesar_cipher.py [-h] -m M -s S
 
 optional arguments:
   -h, --help  show this help message and exit
-  -m M        The mode (e = encrypt or d = decrypt)
+  -m M        The mode (encrypt or decrypt)
   -s S        The shift value
 ```
 
